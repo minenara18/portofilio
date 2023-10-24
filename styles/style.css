@@ -1,0 +1,134 @@
+/* Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+/*variables*/
+:root {
+    --primary-color: #836953;
+    --second-color: #c08457;
+    --third-color: #55300c;
+    --dark-color:#0f0f0f;
+    --gay-color: gray;
+
+    --h1-font-size: 42px;
+    --h2-font-size: 35px;
+    --small-font-size: 18px;
+}
+
+/*reset CSS*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Tilt Neon', sans-serif;
+
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*global CSS*/
+section{
+    padding: 70px 0;
+}
+
+section .section-title{
+    font-size:var(--h2-font-size);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn-orange{
+    background-color: var(--second-color);
+    color: white;
+}
+
+.btn-orange:hover{
+    background-color: var(--dark-color);
+    color: whitesmoke;
+}
+
+.text-orange{
+    color: var(--third-color);
+}
+
+.text-brown{
+    color: var(--primary-color);
+}
+
+.font-control:focus{
+    box-shadow: none;
+    border-color: var(--primary-color);
+}
+
+/*css per section*/
+
+/*Navbar*/
+.navbar .nav-item .nav-link:hover,
+.navbar .nav-item .nav-link.active {
+    color: var(--second-color);
+}
+
+/*Header*/
+.header-section .header-title{
+    font-size: var(--h1-font-size);
+}
+
+.header-section .header-skill{
+    color:var(--dark-color);
+}
+
+.header-section .header-skill:hover{
+    color: var(--primary-color);
+}
+
+.header-section .header-skill i{
+    transition: .3s;
+}
+
+.header-section .header-skill:hover i{
+    transform: rotate(-40deg);
+}
+
+.header-section .header-img{
+    width: 90%
+}
+
+/*Portfolio*/
+.portfolio-section .card .card-img-top{
+    height: 248px;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media screen  and (max-width: 768px){
+    .portfolio-section .card .card-img-top{
+        height: 100px;
+    }
+}
+
+/*Skill*/
+.skills-section, footer{
+    background-color: var(--primary-color);
+}
+
+.skills-section .progress-bar{
+    width: 100%;
+    height: 10px;
+    border-radius: 10px;
+    background-color: var(--gay-color);
+}
+
+.skills-section .progress-bar .progress{
+    background-color: var(--dark-color);
+}
+
+.skills-section .skills-img{
+    size: 80%;
+    height: 400px;
+    float: right;
+}
