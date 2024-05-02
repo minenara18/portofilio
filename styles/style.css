@@ -1,134 +1,252 @@
 /* Fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap");
 
 /*variables*/
 :root {
-    --primary-color: #836953;
-    --second-color: #c08457;
-    --third-color: #55300c;
-    --dark-color:#0f0f0f;
-    --gay-color: gray;
+  --primary-color: #836953;
+  --second-color: #b97d4e;
+  --third-color: #55300c;
+  --dark-color: #222121;
+  --gay-color: gray;
 
-    --h1-font-size: 42px;
-    --h2-font-size: 35px;
-    --small-font-size: 18px;
+  --h1-font-size: 42px;
+  --h2-font-size: 35px;
+  --small-font-size: 18px;
 }
 
 /*reset CSS*/
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: 'Tilt Neon', sans-serif;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Tilt Neon", sans-serif;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /*global CSS*/
-section{
-    padding: 70px 0;
+section {
+  padding: 70px 0;
 }
 
-section .section-title{
-    font-size:var(--h2-font-size);
-    font-weight: bold;
-    text-transform: uppercase;
+section .section-title {
+  font-size: var(--h2-font-size);
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
-.btn-orange{
-    background-color: var(--second-color);
-    color: white;
+.btn-orange {
+  background-color: var(--second-color);
+  color: white;
 }
 
-.btn-orange:hover{
-    background-color: var(--dark-color);
-    color: whitesmoke;
+.btn-orange:hover {
+  background-color: var(--dark-color);
+  color: whitesmoke;
 }
 
-.text-orange{
-    color: var(--third-color);
+.text-orange {
+  color: var(--third-color);
 }
 
-.text-brown{
-    color: var(--primary-color);
+.text-brown {
+  color: var(--primary-color);
 }
 
-.font-control:focus{
-    box-shadow: none;
-    border-color: var(--primary-color);
+.font-control:focus {
+  box-shadow: none;
+  border-color: var(--primary-color);
 }
 
 /*css per section*/
 
 /*Navbar*/
+.navbar-brand {
+  font-size: 28px;
+}
+
+.navbar .nav-item {
+  margin: 10px;
+}
+
 .navbar .nav-item .nav-link:hover,
 .navbar .nav-item .nav-link.active {
-    color: var(--second-color);
+  color: var(--second-color);
 }
 
 /*Header*/
-.header-section .header-title{
-    font-size: var(--h1-font-size);
+.header-section .header-title {
+  font-size: var(--h1-font-size);
 }
 
-.header-section .header-skill{
-    color:var(--dark-color);
+.header-section .header-skill {
+  color: var(--primary-color);
 }
 
-.header-section .header-skill:hover{
-    color: var(--primary-color);
+.header-section .header-skill:hover {
+  color: var(--dark-color);
 }
 
-.header-section .header-skill i{
-    transition: .3s;
+.header-section .header-skill i {
+  transition: 0.3s;
 }
 
-.header-section .header-skill:hover i{
-    transform: rotate(-40deg);
+.header-section .header-skill:hover i {
+  transform: rotate(-38deg);
 }
 
-.header-section .header-img{
-    width: 90%
+button {
+  background-color: var(--dark-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--third-color);
+}
+
+button:active {
+  background-color: var(--third-color);
+}
+
+.header-section .header-img {
+  width: 94%;
+  transition: transform 0.3s ease;
+}
+
+.header-section .header-img:hover {
+  transform: scale(1.1);
 }
 
 /*Portfolio*/
-.portfolio-section .card .card-img-top{
-    height: 248px;
-    width: 100%;
-    object-fit: cover;
+.portfolio-section .card .card-img-top {
+  height: 178px;
+  width: 100%;
+  object-fit: cover;
 }
 
-@media screen  and (max-width: 768px){
-    .portfolio-section .card .card-img-top{
-        height: 100px;
-    }
+@media screen and (max-width: 768px) {
+  .portfolio-section .card .card-img-top {
+    height: 100px;
+  }
 }
 
 /*Skill*/
-.skills-section, footer{
-    background-color: var(--primary-color);
+.skills-section,
+footer {
+  background-color: var(--primary-color);
 }
 
-.skills-section .progress-bar{
-    width: 100%;
-    height: 10px;
-    border-radius: 10px;
-    background-color: var(--gay-color);
+.skills-section .progress-bar {
+  width: 100%;
+  height: 10px;
+  border-radius: 10px;
+  background-color: var(--gay-color);
 }
 
-.skills-section .progress-bar .progress{
-    background-color: var(--dark-color);
+.skills-section .progress-bar .progress {
+  background-color: var(--dark-color);
 }
 
-.skills-section .skills-img{
-    size: 80%;
-    height: 400px;
-    float: right;
+.skills-section .skills-img {
+  size: 80%;
+  height: 400px;
+  float: right;
+}
+
+/*slide*/
+.slide-section {
+  background-color: var(
+    --primary-color
+  ); /* Ganti dengan warna latar belakang yang diinginkan */
+}
+
+.slide-section .card .card-img-top {
+  height: 290px;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .slide-section .card .card-img-top {
+    height: 100px;
+  }
+}
+
+.slide-section .swiper {
+  width: 100%;
+  height: auto; /* Mengubah tinggi menjadi otomatis */
+  max-height: 5000px; /* Menambahkan batasan ketinggian */
+  overflow: hidden; /* Mengatur overflow menjadi tersembunyi */
+}
+
+.slide-section .swiper-slide {
+  display: flex;
+  justify-content: center; /* Memusatkan card image dalam slide */
+}
+
+.slide-section .btn-prev,
+.slide-section .btn-next {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.slide-section .btn-prev i,
+.slide-section .btn-next i {
+  font-size: 24px;
+}
+
+.slide-section .d-flex {
+  position: absolute;
+  bottom: 10px;
+  right: 3px;
+}
+
+/*Footer*/
+footer {
+  background-color: var(--primary-color);
+}
+
+footer .col-md-4 {
+  text-align: center;
+}
+
+footer p,
+footer h2 {
+  color: #fff;
+}
+
+#arrow {
+  display: inline-block;
+  font-size: 24px;
+  cursor: pointer;
+  transition: color 0.3s, transform 0.3s;
+}
+
+#arrow:hover {
+  color: #fff;
+  transform: scale(1.1);
+}
+
+#arrow:hover::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  z-index: -1;
 }

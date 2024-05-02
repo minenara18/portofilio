@@ -1,101 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio_Website</title>
 
     <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="vendors/boxicons/css/boxicons.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="styles/style.css" />
-</head>
-<body>
+  </head>
+  <body>
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container">
-          <a class="navbar-brand fw-bold" href="#">Minty</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Skills</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Timeline</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">News</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-          </div>
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Minty</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                ><strong>Home</strong></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#header">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#timeline">Timeline</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#news">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
     <!--endNavbar-->
 
     <!--Header-->
-    <section class="header-section" id="header">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-md-6">
-                    <p class="text-brown fw-semibold">Jasmine Nawra Febrianingrom</p>
-                    <h1 class="header-title text-uppercase fw-bold mb-5">Creativity Without Limit</h1>
-                    <a href="#" class="header-skill d-inline-flex align-items-center gap-2">
-                        Web Development <i class='bx bx-right-arrow-alt'></i>
-                    </a>
-                    <br />
-                    <a href="#" class="header-skill d-inline-flex align-items-center gap-2">
-                        Photography <i class='bx bx-right-arrow-alt'></i>
-                    </a>
-                    <br />
-                    <a href="#" class="header-skill d-inline-flex align-items-center gap-2">
-                        Graphic Designer <i class='bx bx-right-arrow-alt'></i>
-                    </a>
+    <div class="header-section" id="header">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md-6">
+            <div class="mb-3">
+              <h5 class="text-brown fw-semibold">
+                Jasmine Nawra Febrianingrom
+              </h5>
+              <h1 class="header-title text-uppercase fw-bold mb-5">
+                Creativity Without Limit
+              </h1>
+              <a
+                href="#"
+                class="header-skill d-inline-flex align-items-center gap-2"
+              >
+                Web Development <i class="bx bx-right-arrow-alt"></i>
+              </a>
+              <br />
+              <a
+                href="#photo"
+                class="header-skill d-inline-flex align-items-center gap-2"
+              >
+                Photography <i class="bx bx-right-arrow-alt"></i>
+              </a>
+              <br />
+              <a
+                href="#"
+                class="header-skill d-inline-flex align-items-center gap-2"
+              >
+                Graphic Designer <i class="bx bx-right-arrow-alt"></i>
+              </a>
+              <br />
+              <a
+                href="#"
+                class="header-skill d-inline-flex align-items-center gap-2"
+              >
+                Author of several poems <i class="bx bx-right-arrow-alt"></i>
+              </a>
+              <br />
 
-                    <div class="d-flex align-item-center gap-4 mt-5">
-                      <div class="d-flex align-item-center gap-2">
-                        <h2 class="header-skill fw-bold mb-0">10+</h2>
-                        <p class="text-secondary fs-7 mb-0">Year of <br />Experience</p>
-                      </div>
-                    </div>
-                    <div class="d-flex align-item-center gap-4 mt-5">
-                      <div class="d-flex align-item-center gap-2">
-                        <h2 class="header-skill fw-bold mb-0">30k+</h2>
-                        <p class="text-secondary fs-7 mb-0">Happy <br />Customers</p>
-                      </div>
-                    </div>
+              <div class="d-flex align-items-center gap-4 mt-5">
+                <a href="CV.2.pdf" class="rounded-0" download="CV.pdf">
+                  <button>Download File</button>
+                </a>
+              </div>
+
+              <!-- <div class="d-flex align-items-center gap-4 mt-5">
+                <div class="d-flex align-items-center gap-2">
+                  <h2 class="header-skill fw-bold mb-0">10+</h2>
+                  <p class="text-secondary fs-7 mb-0">Year of<br>Experience</p>
                 </div>
-                <div class="col-md-5">
-                  <img src="img/header.jpg" class="header-img" alt="" />
+
+                <div class="d-flex align-items-center gap-2">
+                  <h2 class="header-skill fw-bold mb-0">30k+</h2>
+                  <p class="text-secondary fs-7 mb-0">Happy<br>Customers</p>
                 </div>
+              </div> -->
             </div>
+          </div>
+          <div class="col-md-5">
+            <div class="mb-2">
+              <img src="img/profile.png" class="header-img" alt="" />
+            </div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
     <!--endHeader-->
 
     <!--Portfolio-->
     <section class="portfolio-section" id="portfolio">
       <div class="container">
         <p class="text-orange fw-semibold">PORTFOLIO</p>
-        <h2 class="section-title mb-5">Selected Words</h2>
+        <h2 class="section-title mb-5">Selected Project</h2>
 
         <div class="swiper portfolio-swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="card">
                 <div class="card-body">
-                  <img src="img/portfolio.jpeg" alt="" class="card-img-top rounded mb-3" />
-                  <h6 class="fw-semibold">Portfolio1</h6>
+                  <div class="image-container">
+                    <img
+                      src="img/portfolio/inventory.png"
+                      alt="School Inventory"
+                      class="card-img-top rounded mb-4"
+                    />
+                  </div>
+                  <h6 class="fw-semibold">School Inventory</h6>
                   <a href="#" class="text-orange">Detail Portfolio</a>
                 </div>
               </div>
@@ -103,8 +153,14 @@
             <div class="swiper-slide">
               <div class="card">
                 <div class="card-body">
-                  <img src="img/portfolio.jpeg" alt="" class="card-img-top rounded mb-3" />
-                  <h6 class="fw-semibold">Portfolio2</h6>
+                  <div class="image-container">
+                    <img
+                      src="img/portfolio/manajeman.png"
+                      alt="Student Management"
+                      class="card-img-top rounded mb-4"
+                    />
+                  </div>
+                  <h6 class="fw-semibold">Student Management</h6>
                   <a href="#" class="text-orange">Detail Portfolio</a>
                 </div>
               </div>
@@ -112,8 +168,14 @@
             <div class="swiper-slide">
               <div class="card">
                 <div class="card-body">
-                  <img src="img/portfolio.jpeg" alt="" class="card-img-top rounded mb-3" />
-                  <h6 class="fw-semibold">Portfolio3</h6>
+                  <div class="image-container">
+                    <img
+                      src="img/portfolio/snaption.png"
+                      alt="Snaption - Gallery Website"
+                      class="card-img-top rounded mb-4"
+                    />
+                  </div>
+                  <h6 class="fw-semibold">Snaption - Gallery Website</h6>
                   <a href="#" class="text-orange">Detail Portfolio</a>
                 </div>
               </div>
@@ -121,27 +183,28 @@
             <div class="swiper-slide">
               <div class="card">
                 <div class="card-body">
-                  <img src="img/portfolio.jpeg" alt="" class="card-img-top rounded mb-3" />
-                  <h6 class="fw-semibold">Portfolio4 </h6>
-                  <a href="#" class="text-orange">Detail Portfolio</a>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="card">
-                <div class="card-body">
-                  <img src="img/portfolio.jpeg" alt="" class="card-img-top rounded mb-3" />
-                  <h6 class="fw-semibold">Portfolio5 </h6>
+                  <div class="image-container">
+                    <img
+                      src="img/portfolio/market.png"
+                      alt="E-commerce"
+                      class="card-img-top rounded mb-4"
+                    />
+                  </div>
+                  <h6 class="fw-semibold">E-commerce</h6>
                   <a href="#" class="text-orange">Detail Portfolio</a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="d-flex align-item-center justify-content-end gap-3">
-            <button class="btn btn-light d-flex align-items-center justify-content-center btn-prev">
+          <div class="d-flex align-item-center justify-content-end gap-3 mb-3">
+            <button
+              class="btn btn-light d-flex align-items-center justify-content-center btn-prev"
+            >
               <i class="bx bx-left-arrow-alt fs-5"></i>
             </button>
-            <button class="btn btn-light d-flex align-items-center justify-content-center btn-next">
+            <button
+              class="btn btn-light d-flex align-items-center justify-content-center btn-next"
+            >
               <i class="bx bx-right-arrow-alt fs-5"></i>
             </button>
           </div>
@@ -159,35 +222,45 @@
             <h2 class="section-title text-white mb-5">Programming Skill</h2>
 
             <div class="mb-3">
-              <div class="d-flex align-items-center justify-content-between mb-2">
-                <p class="text-white text-uppercase fw-semibold mb-0">Javascript</p>
-                <p class="text-white text-uppercase mb-0">73%</p>
+              <div
+                class="d-flex align-items-center justify-content-between mb-2"
+              >
+                <p class="text-white text-uppercase fw-semibold mb-0">
+                  Javascript
+                </p>
+                <p class="text-white text-uppercase mb-0">47%</p>
               </div>
               <div class="progress-bar">
-                <span class="progress" style="width: 73%;"></span>
+                <span class="progress" style="width: 47%"></span>
               </div>
             </div>
             <div class="mb-3">
-              <div class="d-flex align-items-center justify-content-between mb-2">
+              <div
+                class="d-flex align-items-center justify-content-between mb-2"
+              >
                 <p class="text-white text-uppercase fw-semibold mb-0">PHP</p>
-                <p class="text-white text-uppercase mb-0">87%</p>
+                <p class="text-white text-uppercase mb-0">53%</p>
               </div>
               <div class="progress-bar">
-                <span class="progress" style="width: 87%;"></span>
+                <span class="progress" style="width: 53%"></span>
               </div>
             </div>
             <div class="mb-3">
-              <div class="d-flex align-items-center justify-content-between mb-2">
-                <p class="text-white text-uppercase fw-semibold mb-0">Laravel</p>
-                <p class="text-white text-uppercase mb-0">68%</p>
+              <div
+                class="d-flex align-items-center justify-content-between mb-2"
+              >
+                <p class="text-white text-uppercase fw-semibold mb-0">
+                  Laravel
+                </p>
+                <p class="text-white text-uppercase mb-0">72%</p>
               </div>
               <div class="progress-bar">
-                <span class="progress" style="width: 68%;"></span>
+                <span class="progress" style="width: 72%"></span>
               </div>
             </div>
           </div>
           <div class="col-md-6">
-            <img src="img/skill.jpeg" class="skills-img" alt="">
+            <img src="img/skill.jpeg" class="skills-img" alt="" />
           </div>
         </div>
       </div>
@@ -201,33 +274,46 @@
         <h2 class="section-title mb-5">Working Period</h2>
 
         <div class="row py-3 border-button working-period-item">
-          <div class="col-md-4">October, 2023 - Today</div>
+          <div class="col-md-4">July - September 2023</div>
+          <div class="col-md-4">Administration, Field Practice</div>
+          <div class="col-md-4">Fablab Bandung</div>
+        </div>
+
+        <div class="row py-3 border-button working-period-item">
+          <div class="col-md-4">October 2023 - January 2024</div>
           <div class="col-md-4">Novice Programmer, Field practice</div>
           <div class="col-md-4">Onlenkan Studio</div>
         </div>
+
         <div class="row py-3 border-button working-period-item">
-          <div class="col-md-4">July, 2023 - September</div>
-          <div class="col-md-4">Administration, Field Practice</div>
-          <div class="col-md-4">Fablab Bandung</div>
+          <div class="col-md-4">9 March - 9 April 2024</div>
+          <div class="col-md-4">Cashier Helper</div>
+          <div class="col-md-4">KDS Probolinggo</div>
         </div>
       </div>
     </section>
     <!--EndTimeline-->
 
     <!--News-->
-    <section class="portfolio-section" id="portfolio">
+    <section class="portfolio-section" id="news">
       <div class="container">
         <p class="text-orange fw-semibold">NEWS</p>
-        <h2 class="section-title mb-5">Latest News</h2>
+        <h2 class="section-title mb-5">Certificates and Activities</h2>
 
         <div class="swiper portfolio-swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="card">
                 <div class="card-body">
-                  <img src="img/news.jpeg" class="card-img-top rounded mb-3" alt="" />
-                  <h6 class="fw-semibold">Bagaimana Membuat Web Portfolio Keren</h6>
-                  <p class="text-secondary fs-7">September, 07 2022</p>
+                  <img
+                    src="img/sertifikat/Sertifikat Axioo.jpg"
+                    class="card-img-top rounded mb-3"
+                    alt=""
+                  />
+                  <h6 class="fw-semibold">
+                    Receive certificate from Axioo for 3 months
+                  </h6>
+                  <p class="text-secondary fs-7">February, 7 2023</p>
                   <a href="#" class="text-orange">Detail News</a>
                 </div>
               </div>
@@ -235,9 +321,15 @@
             <div class="swiper-slide">
               <div class="card">
                 <div class="card-body">
-                  <img src="img/news.jpeg" class="card-img-top rounded mb-3" alt="" />
-                  <h6 class="fw-semibold">Cara Belajar Laravel</h6>
-                  <p class="text-secondary fs-7">Oktober, 15 2022</p>
+                  <img
+                    src="img/sertifikat/Sertifikat Fablab.jpg"
+                    class="card-img-top rounded mb-3"
+                    alt=""
+                  />
+                  <h6 class="fw-semibold">
+                    Receive certificate from Fablab for 3 months
+                  </h6>
+                  <p class="text-secondary fs-7">Oktober, 1 2023</p>
                   <a href="#" class="text-orange">Detail News</a>
                 </div>
               </div>
@@ -245,8 +337,14 @@
             <div class="swiper-slide">
               <div class="card">
                 <div class="card-body">
-                  <img src="img/news.jpeg" class="card-img-top rounded mb-3" alt="" />
-                  <h6 class="fw-semibold">Membuat Variabel di PHP</h6>
+                  <img
+                    src="img/news.jpeg"
+                    class="card-img-top rounded mb-3"
+                    alt=""
+                  />
+                  <h6 class="fw-semibold">
+                    Certificate from Onlenkan for 4 months
+                  </h6>
                   <p class="text-secondary fs-7">Desember, 21 2022</p>
                   <a href="#" class="text-orange">Detail News</a>
                 </div>
@@ -255,29 +353,27 @@
             <div class="swiper-slide">
               <div class="card">
                 <div class="card-body">
-                  <img src="img/news.jpeg"  class="card-img-top rounded mb-3" alt="" />
+                  <img
+                    src="img/news.jpeg"
+                    class="card-img-top rounded mb-3"
+                    alt=""
+                  />
                   <h6 class="fw-semibold">Animasi dengan Javascript</h6>
                   <p class="text-secondary fs-7">November, 18 2022</p>
                   <a href="#" class="text-orange">Detail News</a>
                 </div>
               </div>
             </div>
-            <div class="swiper-slide">
-              <div class="card">
-                <div class="card-body">
-                  <img src="img/news.jpeg"  class="card-img-top rounded mb-3" alt="" />
-                  <h6 class="fw-semibold">Membuat Inventory dengan Laravel</h6>
-                  <p class="text-secondary fs-7">Oktober, 05 2022</p>
-                  <a href="#" class="text-orange">Detail News</a>
-                </div>
-              </div>
-            </div>
           </div>
           <div class="d-flex align-item-center justify-content-end gap-3">
-            <button class="btn btn-light d-flex align-items-center justify-content-center btn-prev">
+            <button
+              class="btn btn-light d-flex align-items-center justify-content-center btn-prev"
+            >
               <i class="bx bx-left-arrow-alt fs-5"></i>
             </button>
-            <button class="btn btn-light d-flex align-items-center justify-content-center btn-next">
+            <button
+              class="btn btn-light d-flex align-items-center justify-content-center btn-next"
+            >
               <i class="bx bx-right-arrow-alt fs-5"></i>
             </button>
           </div>
@@ -286,18 +382,133 @@
     </section>
     <!--EndNews-->
 
-    <!--Contact-->
-    <section class="portfolio-section" id="portfolio">
+    <!--slide-->
+    <section class="slide-section" id="photo">
       <div class="container">
-        <div class="row align-items-center justufy-content-between">
+        <p class="text-orange fw-semibold">PHOTOGRAPGY</p>
+        <h2 class="section-title text-white mb-5">
+          Results of Photos Captured by the Camera
+        </h2>
+
+        <div class="swiper photo-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-body">
+                  <img
+                    src="img/photo/1.jpg"
+                    class="card-img-top rounded mb-3"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-body">
+                  <img
+                    src="img/photo/2.jpg"
+                    class="card-img-top rounded mb-3"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-body">
+                  <img
+                    src="img/photo/3.jpg"
+                    class="card-img-top rounded mb-3"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-body">
+                  <img
+                    src="img/photo/4.jpg"
+                    class="card-img-top rounded mb-3"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-body">
+                  <img
+                    src="img/photo/5.jpg"
+                    class="card-img-top rounded mb-3"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-body">
+                  <img
+                    src="img/photo/6.jpg"
+                    class="card-img-top rounded mb-3"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-body">
+                  <img
+                    src="img/photo/7.jpg"
+                    class="card-img-top rounded mb-3"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-body">
+                  <img
+                    src="img/photo/8.jpg"
+                    class="card-img-top rounded mb-3"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-body">
+                  <img
+                    src="img/photo/9.jpg"
+                    class="card-img-top rounded mb-3"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--endslide-->
+
+    <!--Contact-->
+    <section class="portfolio-section" id="contact">
+      <div class="container">
+        <div class="row align-items-center justufy-content-between py-4">
           <div class="col-md-6">
             <p class="text-orange fw-semibold">CONTACT</p>
             <h2 class="section-title mb-5">Get in touch</h2>
             <p class="text-secondary mb-3">
-              Please fill out the form on this section to contact with me. Or call
-              between 9.00 a.m until 8.00 p.m. ET, Monday through Friday
+              Please fill out the form on this section to contact with me. Or
+              call between 9.00 a.m until 8.00 p.m. ET, Monday through Friday
             </p>
-  
+
             <div class="d-flex align-items-center gap-2 mb-3">
               <i class="bx bx-map text-brown fw-5"></i>
               <div class="mb-0">Batam, Kepulauan Riau</div>
@@ -319,10 +530,35 @@
             <div class="card">
               <div class="card-body">
                 <form action="">
-                  <input type="text" name="name" id="name" placeholder="name" class="form-control rounded-0 mb-2">
-                  <input type="email" name="email" id="email" placeholder="email" class="form-control rounded-0 mb-2">
-                  <input type="tel" id="phone" name="phone" placeholder="number phone" class="form-control rounded-0 mb-2">
-                  <textarea name="body" id="body" placeholder="message" cols="30" rows="5" class="form-control rounded-0 mb-2"></textarea>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="name"
+                    class="form-control rounded-0 mb-2"
+                  />
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="email"
+                    class="form-control rounded-0 mb-2"
+                  />
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="number phone"
+                    class="form-control rounded-0 mb-2"
+                  />
+                  <textarea
+                    name="body"
+                    id="body"
+                    placeholder="message"
+                    cols="30"
+                    rows="5"
+                    class="form-control rounded-0 mb-2"
+                  ></textarea>
                   <div class="card-footer text-body-secondary">
                     <button class="btn btn-orange w-100">Submit</button>
                   </div>
@@ -336,37 +572,77 @@
     <!--EndContact-->
 
     <!--Footer-->
-    <footer class="py-4">
+    <footer class="py-3">
       <div class="container">
-        <p class="text-white fs-7 mb-0">
-          Copyroght &copy; 2023. All right Reserved
-        </p>
+        <div class="row">
+          <div class="col-md-4">
+            <p class="text-white fs-7 mb-0">
+              Copyroght &copy; 2024. All right Reserved
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h3 class="text-white fs-7 mb-0">Minty</h3>
+          </div>
+          <div class="col-md-4">
+            <div id="arrow">&uarr;</div>
+          </div>
+        </div>
       </div>
     </footer>
     <!--EndFooter-->
     <script src="vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script>
+      window.addEventListener("scroll", function () {
+        var arrow = document.getElementById("arrow");
+        if (window.scrollY > 500) {
+          arrow.style.display = "block";
+        } else {
+          arrow.style.display = "none";
+        }
+      });
+
+      document.getElementById("arrow").addEventListener("click", function () {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+
       var swiper = new Swiper(".portfolio-swiper", {
         slidesPerView: 3,
         spaceBetween: 30,
         navigation: {
-          nextEl: '.btn-next',
-          prevEl: '.btn-prev',
+          nextEl: ".btn-next",
+          prevEl: ".btn-prev",
         },
         breakpoints: {
           // when window width is >= 320px
           320: {
             slidesPerView: 2,
-            spaceBetween: 20
+            spaceBetween: 20,
           },
           // when window width is >= 480px
           480: {
             slidesPerView: 3,
-            spaceBetween: 30
+            spaceBetween: 30,
           },
-        }
+        },
+      });
+
+      var swiper = new Swiper(".photo-swiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".btn-next",
+          prevEl: ".btn-prev",
+        },
       });
     </script>
-</body>
+  </body>
 </html>
